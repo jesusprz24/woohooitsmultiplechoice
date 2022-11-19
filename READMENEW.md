@@ -2,10 +2,10 @@
 # Multiple Choice Code Quiz
 
 # Live URL:
-
+https://jesusprz24.github.io/woohooitsmultiplechoice/
 
 # Github Repo:
-
+https://github.com/jesusprz24/woohooitsmultiplechoice
 
 # Screenshots:
 ![screenshot](./assets/images/Screenshot%20(4).png)

@@ -43,7 +43,7 @@ function showQuestion(question) {
     })
 }
 
-function resetState() {                                                     //This resets the page back to the start button
+function resetState() {                                               //This resets the page back to the start button
     nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
@@ -98,39 +98,45 @@ function clearStatusClass(element) {
 //Questions not working? Ask instructor is there's a different way to write it
 const questions = [
     {
-        question: 'What is code?',
-        answers: {
-            { text: 'Code', correct: true },
-            { text: 'a banana', correct: false },
-
-        }
-    }, 
-
-    {
-        question: 'What language can be used to style code?'
+        question: 'What is Javascript?',
         answers: [
-            { text: 'HTML', correct: false},
-            { text: 'CSS', correct: true},
-            { text: 'Avocado', correct: false},
-            { text: 'MySpace', correct: false},
+            {text: 'A Russian language', correct: false},
+            {text: 'A banana', correct: true},
+            {text: 'A language that activates HTML and CSS', correct: false},
+            {text: 'A lollipop', correct: false},
+
         ]
     },
-    
+
     {
-        question: 'Is coding fun?'
+        question: 'Which can be used for styling HTML',
         answers: [
-            { text: 'No', correct: false},
-            { text: 'Yes', correct: true},
-            { text: 'I would rather eat a spider', correct: false},
-            { text: 'Huh?', correct: false},
+            {text: 'CSS', correct: true},
+            {text: 'HTML', correct: false},
+            {text: 'An avocado', correct: false},
+            {text: 'Sparkles', correct: false},
+
         ]
     },
-    
+
     {
-        question: 'How useful is Javascript?'
+        question: 'Is coding fun?',
         answers: [
-            { text: 'Very', correct: true},
-            { text: 'Not at all', correct: false},
+            {text: 'NO', correct: false},
+            {text: 'Not at all', correct: false},
+            {text: 'Not even a little', correct: false},
+            {text: 'YES!', correct: true},
+
+        ]
+    },
+
+    {
+        question: 'What symbols are used to make a single line comment in Javascript?',
+        answers: [
+            {text: '<!-- -->', correct: false},
+            {text: '/**/', correct: true},
+            {text: '//', correct: false},
+            {text: '&&', correct: false},
 
         ]
     },

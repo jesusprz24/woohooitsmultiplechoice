@@ -3,7 +3,14 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+:root {
+    --hue-neutral: 2001;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
 body {
+    --hue: var(--hue-neutral);
     padding: 0;
     margin: 0;
     display: flex;
@@ -13,6 +20,14 @@ body {
     align-items: center;
     background-color: rgb(172, 9, 172);
 
+}
+
+body.correct {
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
 }
 
 .container {
@@ -32,6 +47,7 @@ body {
 }
 
 .btn {
+    --hue: var(--hue-neutral);
     background-color: black;
     border: 1px solid;
     border-radius: 7px;
@@ -44,7 +60,16 @@ body {
     border-color: black;
 }
 
-.start-btn {
+.btn.correct {
+    --hue: var(--hue-correct);
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+    
+}
+
+.start-btn, .next-btn{
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;

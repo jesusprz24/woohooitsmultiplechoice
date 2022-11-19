@@ -30,6 +30,11 @@ body.wrong {
     --hue: var(--hue-wrong);
 }
 
+.timer {
+    text-align: right;
+    float: right;
+}
+
 .container {
     width: 800px;
     max-width: 80%;
@@ -37,7 +42,9 @@ body.wrong {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
+    text-align: center;
 }
+
 
 .btn-grid {
     display: grid;
@@ -69,7 +76,7 @@ body.wrong {
     
 }
 
-.start-btn, .next-btn{
+.start-btn, .next-btn {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
